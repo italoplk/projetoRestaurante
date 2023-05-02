@@ -1,9 +1,12 @@
+/*sobrescrito pelo normalize*/
 *{
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
 }
+
+
 
 html{
     background-color: #fff;
@@ -31,8 +34,74 @@ header{
 
     height: 100vh;
 
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    */
+
 }
+
 
 h1{
     color: #fff ;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    
+    /*Afastar as palavras*/
+    word-spacing: 15px;
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.hero-text-box{
+    position: relative;
+    top: 40%;
+    left: 2%;
+}
+
+header a{
+    text-decoration: none;
+}
+
+/*os dois estados do link
+link = ainda nao clicado
+visited = após clique*/
+.btn:link, 
+.btn:visited{
+    border: solid 2px rgb(194, 126, 0);
+    border-radius: 20px;
+
+    padding: 7px 15px;
+
+    font-weight: 400;
+
+    margin-right: 15px;
+
+}
+
+.btn-full{
+    background-color: rgb(179, 117, 0);
+    color: white;
+}
+
+/*hover = mouse em cima, active = mouse clicando*/
+.btn-full:hover, .btn-full:active{
+    background-color: rgb(255, 166, 0);
+
+}
+
+.btn-ghost{
+    color:  rgb(179, 117, 0);
+    
+}
+
+.btn-ghost:hover, .btn-ghost:active{
+    background-color:  rgb(179, 117, 0);
+    color: white;
+    
 }
