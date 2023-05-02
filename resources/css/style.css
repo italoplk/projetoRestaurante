@@ -82,6 +82,9 @@ visited = após clique*/
 
     margin-right: 15px;
 
+    /*Transicao suave nas transicoes de cores*/
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
 }
 
 .btn-full{
