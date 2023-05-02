@@ -28,11 +28,13 @@ html{
 /*Header*/
 
 header{
-    background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.9)), url(img/img-hero-header.jpg);
-    background-size: cover;
-    background-position: center;
 
     height: 100vh;
+
+    background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.9)), url(img/img-hero-header.jpg);
+
+    background-size: cover;
+    background-position: center;
 
     /*
     display: flex;
@@ -40,6 +42,41 @@ header{
     justify-content: center;
     align-items:center;
     */
+
+}
+
+
+header nav{
+    margin-top: 20px;
+    position: absolute;
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo{
+    width: 100px;
+    float: left;
+
+
+    margin-left: 10px;
+    
+}
+
+header a{
+    text-decoration: none;
+}
+
+.main-nav{
+    text-decoration: none;
+    list-style: none;
+
+    width: 70%;
+
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -59,13 +96,9 @@ h1{
 }
 
 .hero-text-box{
-    position: relative;
+    position: absolute;
     top: 40%;
     left: 2%;
-}
-
-header a{
-    text-decoration: none;
 }
 
 /*os dois estados do link
