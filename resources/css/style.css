@@ -84,6 +84,8 @@ header a{
     word-spacing: 5px;
     padding-bottom: 8px;
 
+    
+
 }
 
 .main-nav{
@@ -98,10 +100,18 @@ header a{
 
 }
 
+.main-nav li a{
+    font-size: 0.8rem;
+
+}
+
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: solid 2px #faa65d;
     transition: border-bottom 0.2s;
+    
+
+
 
 
 }
