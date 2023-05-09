@@ -175,6 +175,27 @@ visited = após clique*/
 
 }
 
-.section-features>div>h2, .section-features>div>p{
-    text-align: center;
+.section-features p{
+    font-weight: 500;
 }
+
+.section-features>div>h2,
+.section-features>div>p{
+    text-align: center;
+
+}
+
+.section-features>div>p{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.section-features ion-icon{
+
+    font-size: 60px;
+    color: #faa65d;
+
+}
+
