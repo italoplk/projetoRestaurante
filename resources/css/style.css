@@ -59,14 +59,31 @@ header nav{
 header .logo{
     width: 100px;
     float: left;
-
-
     margin-left: 10px;
+    /*Pra tirar efeito de borda*/
+    border: solid 5px transparent;
+
+   
+
+
+
+}
+
+header .logo:hover{
+
+    transition: border 0.3s, margin-top 0.3s;
+    border: solid 5px black;
     
 }
 
 header a{
     text-decoration: none;
+    color: white;
+    font-family: 'Lato';
+    font-weight: 400;   
+    word-spacing: 5px;
+    padding-bottom: 8px;
+
 }
 
 .main-nav{
@@ -77,9 +94,17 @@ header a{
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
 }
 
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: solid 2px #faa65d;
+    transition: border-bottom 0.2s;
+
+
+}
 
 h1{
     color: #fff ;
