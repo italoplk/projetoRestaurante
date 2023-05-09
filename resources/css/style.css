@@ -47,31 +47,29 @@ header{
 
 
 header nav{
-    margin-top: 20px;
+    top: 20px;
     position: absolute;
 
-    width: 100vw;
+    width: 97vw;
 
     display: flex;
     justify-content: space-around;
+
+    max-width: 1000px;
 }
 
 header .logo{
     width: 100px;
-    float: left;
+
     margin-left: 10px;
     /*Pra tirar efeito de borda*/
     border: solid 5px transparent;
-
-   
-
-
 
 }
 
 header .logo:hover{
 
-    transition: border 0.3s, margin-top 0.3s;
+    transition: border 1s;
     border: solid 5px black;
     
 }
@@ -109,11 +107,6 @@ header a{
 .main-nav li a:active{
     border-bottom: solid 2px #faa65d;
     transition: border-bottom 0.2s;
-    
-
-
-
-
 }
 
 h1{
@@ -175,4 +168,13 @@ visited = após clique*/
     background-color:  rgb(179, 117, 0);
     color: white;
     
+}
+
+.section-features{
+    margin: 0 10%;
+
+}
+
+.section-features>div>h2, .section-features>div>p{
+    text-align: center;
 }
