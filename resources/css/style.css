@@ -171,10 +171,86 @@ visited = após clique*/
 }
 
 .section-features{
-    margin: 0 10%;
+    margin: 20px 10%;
+    color: #555;
+    font-weight: 400;
 
 }
 
 .section-features>div>h2, .section-features>div>p{
     text-align: center;
+    margin-bottom: 20px;
 }
+
+.section-features .pitch{
+    margin: 20px 0;
+}
+
+
+.section-features .features{
+    margin-top: 40px;
+}
+.section-features ion-icon{
+
+    color: orange;
+    font-size: 1.2rem;
+}
+
+.section-features h2::after{
+    content: "     ";
+    height: 2px;
+    width: 100px;
+    display: block;
+    background-color: orange;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+.section-features .long-copy{
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+}
+
+
+/* Imagens */
+.images-showcase {
+    list-style: none; /*Retira marcadores*/
+    width: 100%; /*a lista agora ocupa toda largura da tela*/
+}
+
+
+.images-showcase li{
+    display: block; /*permite outros elementos ao lado*/
+    float: left; /*Faz com que os elementos sejam colocados lado a lado*/
+    width: 25%; /*cada item da lista terá 25% de largura em relação a tela... 100/4*/
+    overflow: hidden;
+}
+
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+
+    /* efeitos */
+    background-color: #000;
+}
+
+.photo img {
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+    transform: scale(1.25);
+    transition: transform 0.5s, opacity 0.5s;
+
+    /* efeitos */
+    opacity: 0.7;    
+}
+
+.photo img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+
+
+}
+
