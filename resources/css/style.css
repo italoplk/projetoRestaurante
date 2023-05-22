@@ -23,6 +23,10 @@ html{
 
     font-size: 21px;
 
+
+
+        scroll-behavior: smooth;
+      
 }
 
 /*Header*/
@@ -96,7 +100,10 @@ header a{
     justify-content: space-around;
     align-items: center;
 
+    display: block;
+    visibility: hidden;
 }
+
 
 .main-nav li a{
     font-size: 0.8rem;
@@ -259,3 +266,69 @@ visited = após clique*/
 
 }
 
+
+.mobile-nav-icon{
+    float:right;
+    margin-top: 30px;
+    /*altera o cursor do mouse*/
+    cursor:pointer; 
+
+    display:none;
+  }
+
+.mobile-nav-icon i{
+font-size: 200%;
+color: #fff;
+}
+
+.active{
+    visibility: visible !important;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 767px){
+
+/*Seletores criados anteriormente ou já existentes*/
+nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw !important;
+}
+
+
+
+/*Comentar a seguinte regra desta media query*/
+.main-nav{
+    /*Não mostra o conteúdo html deste seletor*/
+   visibility: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   transition: all 1.5s;
+   opacity: 1;
+
+   background-color: #555;
+}
+
+/*Mostra o menu responsivo, que antes estava escondido/oculto*/
+.mobile-nav-icon{
+    display: inline-block;
+}
+
+.main-nav li{
+    /*um item por linha*/
+    display: block;
+  }
+  
+  .main-nav li a:visited,
+  .main-nav li a:link{
+    /*um item por linha*/
+    display:block;
+    border: 0;
+  }
+
+}
