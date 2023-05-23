@@ -54,12 +54,12 @@ header nav{
     top: 20px;
     position: absolute;
 
-    width: 97vw;
+    width: 100vw;
 
     display: flex;
     justify-content: space-around;
 
-    max-width: 1000px;
+
 }
 
 header .logo{
@@ -94,14 +94,14 @@ header a{
     text-decoration: none;
     list-style: none;
 
-    width: 70%;
+    /* width: 70%; */
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    display: block;
-    visibility: hidden;
+    /* display: block; */
+
 }
 
 
@@ -282,19 +282,31 @@ color: #fff;
 }
 
 .active{
-    visibility: visible !important;
-    opacity: 0;
+
+    opacity: 1 !important;
 }
 
+.burguers{
+    flex-grow: 1;
+}
 @media only screen and (max-width: 767px){
 
+.burguers{
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*Seletores criados anteriormente ou já existentes*/
-nav{
+header nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 100vw !important;
+
+    top: 0;
 }
 
 
@@ -302,14 +314,22 @@ nav{
 /*Comentar a seguinte regra desta media query*/
 .main-nav{
     /*Não mostra o conteúdo html deste seletor*/
-   visibility: hidden;
+   
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 
-   transition: all 1.5s;
-   opacity: 1;
+
+   transition: all 1s linear;
+   opacity: 0;
+
+   border-radius: 30px;
+   padding: 10px;
+
+   width: auto;
+
+
 
    background-color: #555;
 }
@@ -317,7 +337,14 @@ nav{
 /*Mostra o menu responsivo, que antes estava escondido/oculto*/
 .mobile-nav-icon{
     display: inline-block;
+    margin-top: 0;
+    font-size: larger;
+
+    margin-top: -12px;
+    font-size: 40px;
+    padding: 0;
 }
+
 
 .main-nav li{
     /*um item por linha*/
@@ -331,4 +358,46 @@ nav{
     border: 0;
   }
 
+  .images-showcase li{
+    width: 50%;
+  }
+
+}
+
+
+
+.exemplo{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    
+}
+
+.exemplo #amburguer{
+    z-index: 2;
+    
+    transition: all 1s;
+}
+
+.rota{
+    transform: rotate(90deg);
+}
+
+.main-nav2{
+
+    position: absolute;
+    right: -200px;
+    top: 30px;
+    transition: all 1.0s;
+    background-color: #555;
+    border-radius: 10px;
+    z-index: 1;
+
+}
+
+.ativado{
+    position: absolute;
+    right: 3px;
+    top: -8px;
+    padding-top: 50px;
 }
