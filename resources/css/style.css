@@ -97,14 +97,19 @@ header a{
     /* width: 70%; */
 
     display: flex;
+    flex-direction:row;
     justify-content: space-around;
     align-items: center;
+
+
 
     /* display: block; */
 
 }
 
-
+.burguer{
+    flex-grow: 1;
+}
 .main-nav li a{
     font-size: 0.8rem;
 
@@ -286,118 +291,147 @@ color: #fff;
     opacity: 1 !important;
 }
 
-.burguers{
-    flex-grow: 1;
-}
+
 @media only screen and (max-width: 767px){
 
-.burguers{
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .burguer{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-/*Seletores criados anteriormente ou já existentes*/
-header nav{
+        position: fixed;
+        right: 10px;
+        top: 2%;
+
+        z-index: 10;
+
+        flex-grow: 0;
+    }
+
+    /*Seletores criados anteriormente ou já existentes*/
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw !important;
+
+        top: 0;
+    }
+
+    ion-icon{
+        color: black;
+    }
+
+
+    /*Comentar a seguinte regra desta media query -- Não mostra o conteúdo html deste seletor
+    .main-nav{
+         
+    
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    width: 100vw !important;
 
-    top: 0;
-}
+    transition: all 1s linear;
+    opacity: 0;
 
+    border-radius: 30px;
+    padding: 10px;
 
-
-/*Comentar a seguinte regra desta media query*/
-.main-nav{
-    /*Não mostra o conteúdo html deste seletor*/
-   
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-
-
-   transition: all 1s linear;
-   opacity: 0;
-
-   border-radius: 30px;
-   padding: 10px;
-
-   width: auto;
+    width: auto;
 
 
 
-   background-color: #555;
-}
-
-/*Mostra o menu responsivo, que antes estava escondido/oculto*/
-.mobile-nav-icon{
-    display: inline-block;
-    margin-top: 0;
-    font-size: larger;
-
-    margin-top: -12px;
-    font-size: 40px;
-    padding: 0;
-}
-
-
-.main-nav li{
-    /*um item por linha*/
-    display: block;
-  }
-  
-  .main-nav li a:visited,
-  .main-nav li a:link{
-    /*um item por linha*/
-    display:block;
-    border: 0;
-  }
-
-  .images-showcase li{
-    width: 50%;
-  }
-
-}
-
-
-
-.exemplo{
-    position: absolute;
-    right: 0px;
-    top: 200px;
-    
-}
-
-.exemplo #amburguer{
-    z-index: 2;
-    
-    transition: all 1s;
-}
-
-.rota{
-    transform: rotate(90deg);
-}
-
-.main-nav2{
-
-    position: absolute;
-    right: -200px;
-    top: 30px;
-    transition: all 1.0s;
     background-color: #555;
-    border-radius: 10px;
-    z-index: 1;
+    } */
+
+    body {
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+      }
+
+    .main-nav{
+
+        position: absolute;
+        right: -200px;
+        top: 30px;
+        transition: all 1.0s;
+        background-color: #555;
+        border-radius: 10px;
+        z-index: 1;
+
+        overflow: hidden;
+        flex-direction: column;
+
+    }
+
+    /*Mostra o menu responsivo, que antes estava escondido/oculto*/
+    .mobile-nav-icon{
+        display: inline-block;
+        margin-top: 0;
+        font-size: larger;
+
+        margin-top: -12px;
+        font-size: 40px;
+        padding: 0;
+    }
+
+
+    .main-nav li{
+        /*um item por linha*/
+        display: block;
+    }
+    
+    .main-nav li a:visited,
+    .main-nav li a:link{
+        /*um item por linha*/
+        display:block;
+        border: 0;
+    }
+
+    .images-showcase li{
+        width: 50%;
+    }
+
+
+
+
+    .burguer #hamburguer{
+        z-index: 2;
+        
+        transition: all 1s;
+    }
+
+    .rota{
+        transform: rotate(90deg);
+        
+    }
+
+
+
+    .ativado{
+        position: absolute;
+        right: 3px;
+        top: -8px;
+        padding: 0 20px;
+        padding-top: 50px;
+        
+
+        
+
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .mudacor{
+        color: white;
+    }
+
+
 
 }
 
-.ativado{
-    position: absolute;
-    right: 3px;
-    top: -8px;
-    padding-top: 50px;
-}
+
