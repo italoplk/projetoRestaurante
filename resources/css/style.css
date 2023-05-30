@@ -322,7 +322,7 @@ color: #fff;
     }
 
     ion-icon{
-        color: black;
+        color: rgb(255, 98, 0);
     }
 
 
@@ -359,7 +359,7 @@ color: #fff;
         right: -200px;
         top: 30px;
         transition: all 1.0s;
-        background-color: #555;
+        background-color: #ff6a00;
         border-radius: 10px;
         z-index: 1;
 
@@ -428,7 +428,7 @@ color: #fff;
     }
 
     .mudacor{
-        color: white;
+        color: rgb(255, 255, 255);
     }
 
 
